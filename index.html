@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>
+            <img src="images/Kavini.png" class="logo">
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Services</a></li>
+                <li> <a href="#">Portfolio</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+        </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                 <h1>Hi,I'm <Span>Kavini Gavesha </Span><br> from Sri Lanka</h1>
+            </div>
+       </div>
+    </div>
+
+    <!-----about------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Layer 1.png">
+                </div>
+
+                <div class="about-col-2">
+                   <h1 class="sub-title">About Me</h1>
+                   <p>I am an undergraduate software engineering student who collaborates with peers, mentors, and project stakeholders. 
+                    <br>I serve as a point of contact for team discussions, technical decisions, and project coordination, leading initiatives from initial planning through to final implementation and delivery of software solutions.</p>
+                
+                  <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab(event,'skills')"> Skills</p> 
+                      <p class="tab-links"onclick="opentab(event,'experience')" > Experience</p> 
+                      <p class="tab-links"onclick="opentab(event,'education')"> Education</p> 
+                  </div>
+                 
+                <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                    <li><span>UI/UX</span><br>Designing web/App interfaces </li>
+                    <li><span>web development</span><br>web app development </li>
+                    <li><span>Project Management </span><br>Managed development workflows and team collaboration </li>
+                  </ul>  
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023-present</span><br>An Undergraduate in softweare Engineering</li>
+                        <li><span>2020</span><br>Advanced Level</li>
+                        <li><span>2017</span><br>Ordinary Level</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-present</span><br>An Undergraduate in softweare Engineering</li>
+                        <li><span>2020</span><br>Advanced Level</li>
+                        <li><span>2017</span><br>Ordinary Level</li>
+                    </ul>
+                </div>
+
+            </div>   
+        </div>
+        </div>   
+    
+</div>
+<!-----------------------------services------------------------->
+<div id="services">
+   <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+        <div>
+            <h2>Web Design</h2>
+            <p>Developed a strong grasp of web design principles, focusing on creating responsive, user-friendly interfaces. Gained hands-on experience with HTML, CSS, JavaScript, and frontend frameworks to build visually appealing and functional websites. Emphasized usability, accessibility, and performance in all design practices.</p>
+            <a href="#">Learn more</a>
+        </div> 
+        <div>
+            <h2>Frontend Development</h2>
+            <p>Built interactive and responsive web interfaces using HTML, CSS, and JavaScript. Applied modern frontend practices to enhance user experience and ensure cross-browser compatibility. Worked on real-world projects that emphasized clean design, performance optimization, and mobile-first development.</p>
+            <a href="#">Learn more</a>
+        </div> 
+        <div>
+            <h2>Project Management</h2>
+            <p>Understood the fundamentals of planning, organizing, and managing resources to successfully complete projects. Gained experience in setting timelines, delegating tasks, and using tools like Trello and GitHub to track progress and ensure collaboration.</p>
+            <a href="#">Learn more</a>
+        </div> 
+
+    </div>
+  </div>
+
+
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(event,tabname) {
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
