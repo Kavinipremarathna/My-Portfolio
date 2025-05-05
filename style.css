@@ -191,7 +191,7 @@ nav ul li a{
     transform: translateY(-10px);
 }
 
-/*------------------portfolio------------*/
+/*--------------------------portfolio------------*/
 #portfolio{
     padding:50px 0;
 }
@@ -232,6 +232,7 @@ nav ul li a{
     padding:0 40px;
     text-align:center;
     font-size:14px;
+    transition: height 0.5s;
 }
 
 .layer h1{
@@ -269,9 +270,10 @@ nav ul li a{
     color:#fff;
     transition: background 0.5s;
 }
-.btn:hover{
-    background:#ff004f; 
-}
 
+.btn:hover{
+    background: #ff004f;
+
+}
 
 
